@@ -1,0 +1,11 @@
+[project]
+name = "kabit"
+version = "0.01"
+description = "A simple cli habit tracker"
+authors = [{name="Euan O'Rourke"}]
+dependencies = []
+readme = "README.md"
+license = {text="MIT"}
+
+[project.scripts]
+kabit = "kabit:main"
