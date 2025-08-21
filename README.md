@@ -1,3 +1,4 @@
+```
           _____                    _____                    _____                    _____                _____          
          /\    \                  /\    \                  /\    \                  /\    \              /\    \         
         /::\____\                /::\    \                /::\    \                /::\    \            /::\    \        
@@ -21,6 +22,7 @@
          \|___|                   \/____/                  ~~                       \/____/                              
                                                                                                                          
 
+```
 # kabit 🟩
 
 A simple, lightweight **CLI habit tracker** built with Python and `argparse`.  
@@ -58,3 +60,4 @@ Show grid of habit with X width
 ```bash
 kabit show meditation X
 ```
+
