@@ -8,4 +8,4 @@ readme = "README.md"
 license = {text="MIT"}
 
 [project.scripts]
-kabit = "kabit:main"
+kabit = "kabit.cli:main"

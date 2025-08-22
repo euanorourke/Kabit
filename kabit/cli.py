@@ -24,6 +24,15 @@ def add_habit(name):
     save_data(data)
     print(f"Added habit: {name}")
 
+def del_habit(name):
+    data = load_data()
+    if name not in data["habits"]:
+        print(f"Habit '{name}' does not exist.")
+    else:
+        del data["habits"][name] 
+        print(f"Habit '{name}' deleted.")
+        save_data(data)
+    
 def mark_habit(name):
     data = load_data()
     today = str(date.today())
@@ -78,6 +87,8 @@ def main():
     done_parser = subparsers.add_parser("mark")
     done_parser.add_argument("name")
 
+    del_parser = subparsers.add_parser("delete")
+    del_parser.add_argument("name")
 
     subparsers.add_parser("list")
 
@@ -85,6 +96,8 @@ def main():
 
     if args.command == "add":
         add_habit(args.name)
+    elif args.command == "delete":
+        del_habit(args.name)
     elif args.command == "list":
         list_habits()
     elif args.command == "show":
