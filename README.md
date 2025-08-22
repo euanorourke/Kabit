@@ -35,7 +35,7 @@ Track your habits right from the terminal — no distractions, no bloat.
 Clone the repo and install in **editable mode**:
 
 ```bash
-git clone https://github.com/<your-username>/kabit.git
+git clone https://github.com/euanorourke/kabit.git
 cd kabit
 pip install --editable
 ```
@@ -60,4 +60,5 @@ Show grid of habit with X width
 ```bash
 kabit show meditation X
 ```
+
 
